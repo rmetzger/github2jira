@@ -96,7 +96,7 @@ public class App  {
 	    		fluent.field(Field.DESCRIPTION, autorefIssuesInText(i.getBody(), prop)+nl+nl+importInformation);
 	    		fluent.field(Field.SUMMARY, i.getTitle());
 	    		fluent.field(Field.LABELS, ImmutableSet.of("github-import"));
-	    		fluent.field(Field.FIX_VERSIONS, ImmutableSet.of("pre-apache"));
+	    	//	fluent.field(Field.FIX_VERSIONS, ImmutableSet.of("pre-apache"));
 	    		
 	    		net.rcarz.jiraclient.Issue jiraIssue = fluent.execute();
 	    		String patchURL = i.getPullRequest().getPatchUrl();

@@ -1,5 +1,14 @@
 # GitHub to JIRA import tool
 
+## Usage:
+
+```
+git clone https://github.com/rmetzger/github2jira.git
+cd github2jira
+cp config.properties.default config.properties
+mvn clean package
+```
+
 The tool is using the following libraries:
 - "jira-client": https://github.com/rcarz/jira-client (LGPL)
 - "GitHub Java API (org.eclipse.egit.github.core)": https://github.com/eclipse/egit-github/tree/master/org.eclipse.egit.github.core (EPL - http://www.eclipse.org/legal/epl-v10.html)
